@@ -10,11 +10,11 @@ public class MainSeleniumPage extends BaseSeleniumPage {
     @FindBy(xpath = "footer[role='contentinfo']")
     private WebElement footer;
 
-    @FindBy(css = ".textfield[role='searchbox']")
+    @FindBy(css = "#searchFormInput-input")
     private WebElement searchInput;
 
     public MainSeleniumPage() {
-        driver.get("https://mvnrepository.com/");
+        driver.get("https://www.ticketmaster.com/   ");
         PageFactory.initElements(driver, this);
     }
 
